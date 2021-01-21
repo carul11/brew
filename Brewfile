@@ -1,0 +1,84 @@
+cask_args appdir: "~/Applications"
+
+## Taps
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "datawire/blackbird"    # tap for telepresence (https://www.telepresence.io/reference/install)
+tap "yleisradio/terraforms" # tap for Terraform version switcher (https://github.com/Yleisradio/homebrew-terraforms)
+
+## Casks (Applications)
+cask 'google-chrome'
+cask 'authy'
+cask 'visual-studio-code'
+cask 'iterm2'
+cask 'dropbox'
+cask 'spotify'
+cask 'sonos'
+cask 'logitech-options'
+cask 'keybase'
+cask 'slack'
+cask 'whatsapp'
+cask 'cheatsheet'
+cask 'font-hack-nerd-font'
+
+## Brew (CLI)
+brew 'zsh'
+brew 'coreutils'
+brew 'jq'       # json parser
+brew 'bat'      # cat on steroids
+brew 'tmux'     # terminal multiplexer
+brew 'direnv'   # load and unload environment variables depending on the current directory.
+brew 'httpie'   # user-friendly command-line HTTP client for the API era.
+brew 'tldr'     # simplify man pages with practical examples.
+brew 'lsd'      # LSDeluxe
+brew 'chezmoi'  # dotfiles mgmt
+brew 'tree'
+brew 'lastpass-cli'
+brew 'circleci'
+brew 'yamllint' # Linter for YAML syntax
+
+# Hashicorp stack
+brew 'terraform'
+brew 'terraform-docs' # https://github.com/segmentio/terraform-docs
+brew 'tflint'
+brew 'tfenv'
+brew 'chtf' 	# Terraform version switcher
+brew 'packer'	# Hashicorp Packer
+brew 'vault-cli'
+
+# git related + ensure latest
+brew 'git'
+brew 'gist'
+brew 'git-lfs'
+brew 'diff-so-fancy'
+brew 'git-crypt'
+brew 'git-flow'
+
+# Languages
+brew 'golang'
+
+# Containers
+brew 'docker'
+brew 'podman'
+brew 'skopeo'
+brew 'dive'     # a tool to explore docker layers
+
+# K8S
+brew 'kubernetes-cli'
+brew 'kubectl'
+brew 'kubectx'
+brew 'helm'
+
+# Cloud Cli
+brew 'awscli'
+brew 'libyaml'
+brew 's3cmd'
+
+# IaC
+brew 'ansible'
+
+# Others
+brew 'pyenv-virtualenv'
